@@ -3,17 +3,26 @@ from django.shortcuts import render
 # Create your views here.
 
 
+def home(request):
+    context = {}
+    return render(request, 'home.html', context)
+
+
 def create(request):
-    return render('create.html')
+    context = {}
+    return render(request, 'create.html', context)
 
 
 def date(request, date):
-    return render('date.html')
+    context = {}
+    return render(request, 'date.html', context)
 
 
 def events(request, event):
-    return render('events.html')
+    context = {}
+    return render(request, 'events.html', context)
 
 
 def about(request):
-    return render('about.html')
+    context = {}
+    return render(request, 'about.html', context)
