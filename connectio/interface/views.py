@@ -5,24 +5,24 @@ from django.shortcuts import render
 
 def home(request):
     context = {}
-    return render(request, 'home.html', context)
+    return render(request, 'interface/home.html', context)
 
 
 def create(request):
     context = {}
-    return render(request, 'create.html', context)
+    return render(request, 'interface/create.html', context)
 
 
 def date(request, date):
     context = {}
-    return render(request, 'date.html', context)
+    return render(request, 'interface/date.html', context)
 
 
 def events(request, event):
     context = {}
-    return render(request, 'events.html', context)
+    return render(request, 'interface/events.html', context)
 
 
 def about(request):
     context = {}
-    return render(request, 'about.html', context)
+    return render(request, 'interface/about.html', context)
