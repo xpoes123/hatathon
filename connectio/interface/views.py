@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -18,11 +19,29 @@ def date(request, date):
     return render(request, 'interface/date.html', context)
 
 
+def all_events(request):
+    context = {}
+    return render(request, 'interface/all_events.html', context)
+
+
 def events(request, event):
     context = {}
     return render(request, 'interface/events.html', context)
 
 
+@login_required(login_url='')
+def messages(request):
+    context = {}
+    return render(request, 'interface/messages.html', context)
+
+
 def about(request):
     context = {}
     return render(request, 'interface/about.html', context)
+
+
+def ifdfa(request):
+    context = {
+        'site_title': 'Connectio',
+    }
+    return render(request, 'interface/base.html', context)
