@@ -10,7 +10,7 @@
 .header{
     height: 650px;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/event.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/event.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -50,6 +50,14 @@ nav img{
 }
 .nav-links ul li:hover::after{
     width: 100%;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background: gray;
+}
+footer p{
+    color: #222;
 }
 
 /*-----block1-----*/
